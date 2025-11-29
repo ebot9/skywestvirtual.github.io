@@ -1,10 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Cat Download</title>
+    <title>Download</title>
 </head>
 <body>
-    <h1>Here’s your cat 🐱</h1>
-    <a href="cat.jpg" download="cat.jpg">Click here to download the cat</a>
+<script>
+    const a = document.createElement("a");
+    a.href = "cat.jpg";
+    a.download = "cat.jpg";
+    document.body.appendChild(a);
+    a.click();
+</script>
+<p>Your download should begin automatically.</p>
 </body>
 </html>
